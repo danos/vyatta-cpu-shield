@@ -1,0 +1,13 @@
+[Unit]
+Description=CPU Shield
+Before=slice.target
+RequiresMountsFor=/proc
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/cpu_shield
+
+[Install]
+WantedBy=multi-user.target
+

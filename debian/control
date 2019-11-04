@@ -1,0 +1,16 @@
+Source: vyatta-cpu-shield
+Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
+Section: contrib/net
+Priority: extra
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 9), dh-systemd, dh-python, python3
+X-Python3-Version: >= 3.2
+
+Package: vyatta-cpu-shield
+Architecture: all
+Depends:  ${misc:Depends},
+	  ${python3:Depends},
+	  python3-vplaned,
+	  python3-vyatta-cfgclient,
+Description: Vyatta defaults
+ This package contains cpu isolation facilities

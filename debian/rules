@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ --with systemd,python3
+
+override_dh_systemd_start:
+	dh_systemd_start --no-start
+
+override_dh_installinit:

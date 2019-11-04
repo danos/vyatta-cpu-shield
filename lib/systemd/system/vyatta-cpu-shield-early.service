@@ -1,0 +1,15 @@
+[Unit]
+Description=CPU Shield (early)
+Before=slice.target
+RequiresMountsFor=/proc
+Wants=vyatta-dataplane.service
+Before=vyatta-dataplane.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/cpu_shield --startup --early
+
+[Install]
+WantedBy=multi-user.target
+

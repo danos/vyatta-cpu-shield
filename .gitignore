@@ -1,0 +1,9 @@
+debian/debhelper.log
+debian/files
+debian/postrm.debhelper
+debian/substvars
+debian/vyatta-cpu-shield.debhelper.log
+debian/vyatta-cpu-shield.postinst.debhelper
+debian/vyatta-cpu-shield.postrm.debhelper
+debian/vyatta-cpu-shield.substvars
+debian/vyatta-cpu-shield/
