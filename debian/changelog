@@ -1,3 +1,10 @@
+vyatta-cpu-shield (0.2.13) unstable; urgency=medium
+
+  [ Nicholas Brown ]
+  * dh-systemd is part of debhelper
+
+ -- Colin Docherty <colin.docherty@intl.att.com>  Tue, 31 Aug 2021 09:08:41 -0700
+
 vyatta-cpu-shield (0.2.12) unstable; urgency=medium
 
   * DANOS Import
